@@ -292,6 +292,9 @@ label {
   width: 44px;
   height: 5px;
   background-color: #F1811A;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .hamburger-menu {
@@ -331,10 +334,31 @@ label {
   font-size: 14px;
   line-height: 17px;
   color: #fff;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .header__menu-link:hover {
   color: #F1811A;
+}
+
+.change1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 8px);
+      -ms-transform: rotate(-45deg) translate(-4px, 8px);
+          transform: rotate(-45deg) translate(-4px, 8px);
+  border-radius: 3px;
+}
+
+.change2 {
+  opacity: 0;
+}
+
+.change3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -13px);
+      -ms-transform: rotate(45deg) translate(-8px, -13px);
+          transform: rotate(45deg) translate(-8px, -13px);
+  border-radius: 3px;
 }
 
 .offer {
@@ -473,6 +497,13 @@ label {
 .foundry__block-more {
   background-color: #4B4B4B;
   padding: 17px 0;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.foundry__block-more:hover {
+  background-color: #F1811A;
 }
 
 .foundry__block-link {
@@ -520,6 +551,8 @@ label {
 .catalog__exemplification {
   background-color: #4B4B4B;
   padding: 17px 34px 28px 39px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
 }
 
 .catalog__exemplification-img {
