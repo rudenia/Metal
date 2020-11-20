@@ -1403,6 +1403,14 @@ label {
     height: 119px;
   }
 
+  .section__title-mechanical::before {
+    max-width: 26%;
+  }
+
+  .section__title-mechanical::after {
+    max-width: 26%;
+  }
+
   .container {
     width: 720px;
   }
@@ -1566,6 +1574,35 @@ label {
     padding: 40px 62px;
   }
 
+  .mechanical {
+    padding-top: 87px;
+  }
+
+  .mechanical__block {
+    margin-top: 30px;
+  }
+
+  .choice {
+    padding-top: 80px;
+  }
+
+  .choice__block {
+    margin-bottom: 10px;
+  }
+
+  .choice__block-description-hide {
+    display: none;
+  }
+
+  .choice__consultation {
+    margin-top: 40px;
+    padding: 40px 60px;
+  }
+
+  .choice__consultation-description {
+    text-align: center;
+  }
+
   .private__block {
     max-width: 691px;
   }
@@ -1630,6 +1667,14 @@ label {
 }
 
 @media (max-width: 992px) and (max-width: 768px) {
+  .section__title-mechanical::before {
+    display: none;
+  }
+
+  .section__title-mechanical::after {
+    display: none;
+  }
+
   .catalog-title::before {
     display: none;
   }
@@ -1637,11 +1682,20 @@ label {
 
 @media (max-width: 768px) {
   .section__title::before {
-    max-width: 33%;
+    max-width: 26%;
   }
 
   .section__title::after {
-    max-width: 33%;
+    max-width: 26%;
+  }
+
+  .section__title-mechanical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .container {
@@ -1750,6 +1804,40 @@ label {
   .quality__block {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+
+  .mechanical {
+    padding-top: 50px;
+  }
+
+  .mechanical__block-description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .choice {
+    padding-top: 50px;
+  }
+
+  .choice-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .choice__block {
+    padding: 17px 0;
+  }
+
+  .choice__block-extended {
+    padding: 7px 0 6px;
+  }
+
+  .choice__block-title {
+    font-size: 14px;
+  }
+
+  .choice__block-description {
+    font-size: 14px;
   }
 
   .private__block {
@@ -2043,6 +2131,18 @@ label {
 
   .quality__block-text {
     font-size: 16px;
+  }
+
+  .choice {
+    padding-bottom: 40px;
+  }
+
+  .choice__block-last {
+    margin-bottom: 50px;
+  }
+
+  .choice__consultation {
+    margin-top: 0;
   }
 
   .private {
