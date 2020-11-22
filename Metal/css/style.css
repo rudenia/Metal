@@ -174,10 +174,6 @@ label {
           justify-content: space-between;
 }
 
-.section__title-lines {
-  line-height: 32px;
-}
-
 .section__title::before {
   content: '';
   display: block;
@@ -188,11 +184,6 @@ label {
   background: #F1811A;
 }
 
-.section__title-lines::before {
-  margin-top: 29px;
-  max-width: 30%;
-}
-
 .section__title::after {
   content: '';
   display: block;
@@ -201,6 +192,15 @@ label {
   margin-top: 15px;
   max-width: 33%;
   background: #F1811A;
+}
+
+.section__title-lines {
+  line-height: 32px;
+}
+
+.section__title-lines::before {
+  margin-top: 29px;
+  max-width: 30%;
 }
 
 .section__title-lines::after {
@@ -843,6 +843,11 @@ label {
   padding-top: 118px;
 }
 
+.choice-des {
+  background-color: #444444;
+  padding-top: 91px;
+}
+
 .choice-title {
   font-size: 26px;
   font-weight: 700;
@@ -879,7 +884,6 @@ label {
 }
 
 .choice__consultation {
-  margin-top: 91px;
   background-color: #f4f4f4;
   padding: 58px 53px 55px;
 }
@@ -1139,11 +1143,15 @@ label {
   line-height: 145.19%;
 }
 
+.contacts-bg {
+  display: none;
+}
+
 .map {
   height: 250px;
   max-width: 600px;
   width: 100%;
-  margin-right: 67px;
+  margin-right: 65px;
 }
 
 .category {
@@ -1317,6 +1325,14 @@ label {
     width: 130px;
   }
 
+  .section__title-lines::before {
+    max-width: 26%;
+  }
+
+  .section__title-lines::after {
+    max-width: 26%;
+  }
+
   .container {
     width: 960px;
   }
@@ -1351,12 +1367,34 @@ label {
     font-size: 15px;
   }
 
+  .copper {
+    padding: 87px 0 0;
+  }
+
+  .copper-link {
+    max-width: 435px;
+    height: 295px;
+  }
+
+  .copper-img {
+    max-width: 435px;
+    height: 295px;
+  }
+
   .private__block {
     max-width: 930px;
   }
 
   .private__block-title {
     font-size: 23px;
+  }
+
+  .standard__block-item::before {
+    width: 38px;
+  }
+
+  .standard__block-item-circle::before {
+    width: 18px;
   }
 
   .contacts__block-info {
@@ -1401,6 +1439,14 @@ label {
   .icon__logo-footer {
     width: 182px;
     height: 119px;
+  }
+
+  .section__title-lines::before {
+    max-width: 21%;
+  }
+
+  .section__title-lines::after {
+    max-width: 21%;
   }
 
   .section__title-mechanical::before {
@@ -1582,6 +1628,10 @@ label {
     margin-top: 30px;
   }
 
+  .choice-des {
+    padding-top: 40px;
+  }
+
   .choice {
     padding-top: 80px;
   }
@@ -1595,12 +1645,26 @@ label {
   }
 
   .choice__consultation {
-    margin-top: 40px;
     padding: 40px 60px;
   }
 
   .choice__consultation-description {
     text-align: center;
+  }
+
+  .copper-description {
+    margin-top: 30px;
+  }
+
+  .copper-link {
+    margin-bottom: 20px;
+    max-width: 315px;
+    height: 213px;
+  }
+
+  .copper-img {
+    max-width: 315px;
+    height: 213px;
   }
 
   .private__block {
@@ -1689,6 +1753,14 @@ label {
     max-width: 26%;
   }
 
+  .section__title-lines::before {
+    max-width: 16%;
+  }
+
+  .section__title-lines::after {
+    max-width: 16%;
+  }
+
   .section__title-mechanical {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1696,6 +1768,14 @@ label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .section__title-gallery::before {
+    max-width: 20%;
+  }
+
+  .section__title-gallery::after {
+    max-width: 20%;
   }
 
   .container {
@@ -1840,6 +1920,28 @@ label {
     font-size: 14px;
   }
 
+  .copper-description {
+    line-height: 30px;
+  }
+
+  .copper-title {
+    margin-top: 75px;
+  }
+
+  .copper-gallery {
+    margin-top: 30px;
+  }
+
+  .copper-link {
+    max-width: 225px;
+    height: 152px;
+  }
+
+  .copper-img {
+    max-width: 225px;
+    height: 152px;
+  }
+
   .private__block {
     max-width: 510px;
   }
@@ -1885,6 +1987,7 @@ label {
 
   .section__title {
     font-size: 20px;
+    padding: 0 30px;
   }
 
   .section__title::before {
@@ -1895,7 +1998,20 @@ label {
     max-width: 0%;
   }
 
+  .section__title-lines::before {
+    max-width: 0%;
+  }
+
+  .section__title-lines::after {
+    max-width: 0%;
+  }
+
   .section__title-contact {
+    background-color: #444444;
+    padding: 60px 0 20px;
+  }
+
+  .section__title-contactHP {
     background-color: #252525;
     padding-bottom: 20px;
   }
@@ -2133,16 +2249,52 @@ label {
     font-size: 16px;
   }
 
-  .choice {
-    padding-bottom: 40px;
+  .choice-des {
+    padding-top: 0;
+    background-color: #f4f4f4;
   }
 
   .choice__block-last {
-    margin-bottom: 500px;
+    margin-bottom: 50px;
   }
 
   .choice__consultation {
-    margin-top: 0;
+    padding: 30px 0;
+  }
+
+  .choice__consultation-description {
+    font-size: 16px;
+  }
+
+  .copper {
+    padding: 50px 0 55px;
+  }
+
+  .copper-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .copper-title {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .copper-gallery {
+    margin-top: 20px;
+  }
+
+  .copper-link {
+    max-width: 228px;
+    height: 154px;
+    margin-bottom: 5px;
+  }
+
+  .copper-img {
+    max-width: 228px;
+    height: 154px;
   }
 
   .private {
@@ -2189,6 +2341,10 @@ label {
     width: 68px;
   }
 
+  .tooling {
+    padding: 80px 0;
+  }
+
   .tooling-link {
     margin: 20px auto 0;
     font-size: 16px;
@@ -2211,6 +2367,12 @@ label {
 
   .contacts__block-item {
     font-size: 16px;
+  }
+
+  .contacts-bg {
+    display: block;
+    padding-top: 60px;
+    background-color: #444444;
   }
 
   .map {
@@ -2244,6 +2406,10 @@ label {
   .category__block-description {
     border-left: 1px solid transparent;
     padding: 0 0 6px 10px;
+  }
+
+  .footer {
+    padding: 30px 0;
   }
 
   .footer__logo {
